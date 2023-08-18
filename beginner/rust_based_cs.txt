@@ -1,0 +1,66 @@
+
+    A Computer Resources
+------------------------------
+Computation -> CPU
+- crunch numbers
+
+Memory -> persistane & volatile memory
+- store data
+
+persistant -> hard-drive 
+ - aka "secondary mem" 
+ - slow
+ - abundant
+ - can hold data without power
+
+
+volative -> RAM 
+- aka working mem 
+- fast (orders of magnitude faster)
+- scarce (orders of magnitude less)
+- used during program execution
+- cannot persist w/o power
+
+They work together!!
+
+SQL db - persistent mem
+Server running -> RAM
+
+we need to manage the way our programs
+use RAM!
+
+
+
+                  - Function Args, local variables
+                  - Stack Frame for each fn call
+     STACK        - Lifetime of function
+       |          - Known at compile time               
+       V          - Cleaned after return
+                  - Dynamic/ Fixed upper limit
+    
+    _________ <- Stack over flow
+
+
+   Free Memory  
+
+
+                  - Values that live beyond fn lifetime 
+       ^          - Lifetime define by Programmer
+       |          - Values accessed by mulitple threads 
+                  - Manual cleanup
+     HEAP         - Large values
+                  - Unknown size at compile time 
+                    (Dynamic Size)
+    
+    
+    STATIC        - Programs Binary Instructions
+                  - Static Variables & stirng literals
+                  - Size is fixed known at compile time
+                  - Lifetime of program
+                  - cleaned up after program is finished executing
+
+
+ When we talk about memory management, we are really talking
+ about managing memory on the heap!
+
+
