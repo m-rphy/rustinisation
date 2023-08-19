@@ -1,5 +1,5 @@
 [package]
-name = "error_handling"
+name = "deriving_traits"
 version = "0.1.0"
 edition = "2021"
 
