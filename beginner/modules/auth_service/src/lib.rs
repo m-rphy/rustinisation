@@ -18,7 +18,10 @@ mod database;
 mod auth_utils;
 
 // bringing Credentials into scope as `Credentials`
-use auth_utils::models::Credentials;
+
+// We are also re-exporting the Credential modules with
+// the pub keyword
+pub use auth_utils::models::Credentials;
 use database::Status;
 
 pub fn authenicator(creds: Credentials) {
