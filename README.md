@@ -15,5 +15,8 @@ examplse of how implement unit tests and integration tests in your Rust packages
 ## *Intermediate*
 
 This is just beginning, but I am starting with generics. I will then move onto traits,
-including supertraits, trait bounds, trait objects, deriving traits, and The Orphan Rule,
+including supertraits, trait bounds, trait objects, deriving traits, and The Orphan Rule.
 
+## *Advanced*
+
+It's a ways away as of now, by we'll focus on async and unsafe Rust!
