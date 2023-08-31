@@ -48,7 +48,7 @@ impl<T> BrowserCommand<T> {
     }
 }
 
-// impl block with concrete type
+// impl block with concrete types
 
 // we can print it bc we defined it to be a string!
 // So we couln't call this command on a type that
@@ -69,6 +69,11 @@ fn serialize_payload<T>(payload: T) -> String {
     "placeholder".to_owned()
 }
 
+// The definition of the Result Enum
+enum Result<T,E> {
+    Ok(T),
+    Err(E)
+}
 
 fn main() {
     let cmd_1 = BrowserCommand {
@@ -93,4 +98,7 @@ fn main() {
     // passing into different type
     let j_1 = serialize_payload(p1);
     let j_2 = serialize_payload(p2);
+
+    // can do this becuase cmd_1 has a payload of type String
+    cmd_1.print_payload();
 }
